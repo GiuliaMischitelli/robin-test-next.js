@@ -1,0 +1,156 @@
+.grid-container {
+  position: relative;
+  top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.grid-item {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+
+.product-price {
+  color: #28a745;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.product-detail {
+  background-color: var(--background);
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.product-images {
+  text-align: center;
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: fit-content;
+  height: auto;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gallery-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.product-info {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.product-info h1 {
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+.info-actions,
+.product-description,
+.brand,
+.category,
+.price,
+.sku,
+.return-policy,
+.shipping-info {
+  flex: 4
+}
+
+.info-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-container {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1322px) {
+  .product-detail {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+[data-theme="dark"] {
+
+  .product-detail {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+  }
+}

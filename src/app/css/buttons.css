@@ -1,0 +1,44 @@
+button {
+  background: transparent;
+  padding: 5px;
+  border: solid 1px var(--background);
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.shopping-cart {
+  display: grid;
+  padding: 5px;
+}
+  
+.add-to-cart {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background-color: var(--accent-color);
+  }
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 4.5rem;
+  background: rgb(5, 7, 126);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
