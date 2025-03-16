@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../css/globals.css';
 import Product from '@/app/components/Product';
 import PageHeader from '@/app/layout/PageHeader';
 import PageFooter from '@/app/layout/PageFooter';

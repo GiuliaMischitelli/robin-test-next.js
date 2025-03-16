@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import './css/globals.css';
 import ThemeContextProvider from "./providers/ThemeContextProvider";
 import { ShoppingCartContextProvider } from "./providers/ShoppingCartProvider";
 

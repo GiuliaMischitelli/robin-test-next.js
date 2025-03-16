@@ -17,7 +17,7 @@ function ThemeToggle() {
         } else {
             setTheme("light");
         }
-    }, [theme])
+    }, [theme, setTheme])
 
     if (!mounted) {
         return null;
